@@ -8,7 +8,6 @@ public class Main {
         // Read input.json file
         String jsonContent = new String(Files.readAllBytes(Paths.get("input.json")));
 
-        // Extract values using basic string operations (no JAR needed)
         String firstName = extractValue(jsonContent, "first_name").toLowerCase();
         String rollNumber = extractValue(jsonContent, "roll_number").toLowerCase();
 
